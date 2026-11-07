@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Server Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .status {
+            color: green;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTTP Test Page</h1>
+    <p class="status">✓ Web Server Operational</p>
+    <p>If you can see this page, HTTP connectivity is working.</p>
+
+    <hr>
+
+    <p><strong>Server:</strong> Test Server</p>
+    <p><strong>Time:</strong> <span id="time"></span></p>
+
+    <script>
+        document.getElementById('time').textContent =
+            new Date().toLocaleString();
+    </script>
+</body>
+</html>
